@@ -36,8 +36,8 @@
   <a href="#materials"><span class="n">05</span><h3>Materials Selection</h3><span class="t">Materials Science, Engineering Decisions</span><span class="y">2025</span><img src="assets/img/materials-modulus-density.png" alt=""></a>
   <a href="#makers-valley"><span class="n">06</span><h3>Makers Valley Housing</h3><span class="t">Materials Science, Sustainability</span><span class="y">2025</span><img src="assets/img/makers-modular.png" alt=""></a>
   <a href="#pipe-friction"><span class="n">07</span><h3>Pipe Friction</h3><span class="t">Fluid Mechanics, Lab Testing</span><span class="y">2026</span><img src="assets/img/pipe-friction-moody.svg" alt=""></a>
-  <a href="#refrigeration"><span class="n">08</span><h3>Refrigeration Cycle</h3><span class="t">Thermodynamics, Lab Testing</span><span class="y">2026</span><img src="assets/img/refrigeration-cycle.svg" alt=""></a>
-  <a href="#spirit-level"><span class="n">09</span><h3>Digital Spirit Level</h3><span class="t">Mechatronics, Arduino, Sensors</span><span class="y">2026</span><img src="assets/img/spirit-level-feedback.svg" alt=""></a>
+  <a href="#refrigeration"><span class="n">08</span><h3>Refrigeration Cycle</h3><span class="t">Thermodynamics, Lab Testing</span><span class="y">2026</span><img src="assets/img/refrigeration-ph-chart.jpg" alt=""></a>
+  <a href="#spirit-level"><span class="n">09</span><h3>Digital Spirit Level</h3><span class="t">Mechatronics, Arduino, Sensors</span><span class="y">2026</span><img src="assets/img/spirit-level-circuit.jpg" alt=""></a>
 </nav>
 
 <!-- 01 Compressor -->
@@ -455,6 +455,7 @@
       </table>
     </div>
 
+    <figure><img src="assets/img/refrigeration-ph-chart.jpg" alt="Hand-annotated R134a pressure-enthalpy chart with the measured cycle plotted"><figcaption>My annotated R134a P-h chart from the assessment: evaporating at 2.8 bar, condensing at 9 bar, states 1 to 4 marked</figcaption></figure>
     <figure><img src="assets/img/refrigeration-cycle.svg" alt="Refrigeration cycle diagram with measured temperatures and pressures"><figcaption>The measured cycle: compressor, condenser, expansion valve and evaporator</figcaption></figure>
 
     <div class="insight">
@@ -479,6 +480,7 @@
   <div class="r">
     <h4>Overview</h4>
     <p>Built a digital spirit level on an Arduino Uno that reads an accelerometer and gyroscope module over I²C, works out the tilt in two axes and reports it three ways: an RGB LED that changes colour, a buzzer that beeps faster as the tilt grows, and a servo that follows the tilt. A push button re-zeroes the level so it can measure relative to any surface.</p>
+    <figure><img src="assets/img/spirit-level-circuit.jpg" alt="Arduino spirit level circuit with accelerometer module, RGB LED, buzzer and zero button"><figcaption>Spirit level circuit: accelerometer module, RGB LED, buzzer and zero button</figcaption></figure>
 
     <h4>My role</h4>
     <p>Team of three. I wrote most of the code, built the circuits and wrote most of the report's written answers.</p>
@@ -492,7 +494,14 @@
       <li>Added a zero button (internal pull-up, triggered on the press edge) that stores the current angles as a reference, so all later angles are measured relative to that position</li>
     </ul>
 
+    <div class="gallery" style="grid-template-columns: repeat(3, 1fr)">
+      <figure><img src="assets/img/spirit-level-green.jpg" alt="LED green when level"><figcaption>Green, under 5°</figcaption></figure>
+      <figure><img src="assets/img/spirit-level-yellow.jpg" alt="LED yellow at moderate tilt"><figcaption>Yellow, 5° to 15°</figcaption></figure>
+      <figure><img src="assets/img/spirit-level-red.jpg" alt="LED red at large tilt"><figcaption>Red, over 15°</figcaption></figure>
+    </div>
     <figure><img src="assets/img/spirit-level-feedback.svg" alt="LED colour bands and buzzer interval plotted against tilt angle"><figcaption>How the LED and buzzer respond to tilt, taken from the code</figcaption></figure>
+    <figure><img src="assets/img/spirit-level-servo.jpg" alt="Final build with servo motor following the tilt"><figcaption>Final build with the servo following the X tilt</figcaption></figure>
+    <figure class="narrow"><img src="assets/img/spirit-level-serial.png" alt="Serial monitor output showing tilt angles and servo angle"><figcaption>Serial output: tilt angles and the matching servo angle</figcaption></figure>
 
     <div class="insight">
       <h4>Key insight</h4>
