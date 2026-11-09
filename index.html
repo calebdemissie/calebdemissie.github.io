@@ -29,21 +29,90 @@
 <main>
 <div class="lab"><span>[ INDEX ]</span><span>(09)</span></div>
 <nav class="idx">
-  <a href="#compressor"><span class="n">01</span><h3>Piston Compressor</h3><span class="t">Mechanical Design, Thermodynamics, CAD</span><span class="y">2025–26</span><img src="assets/img/compressor-build-1.jpg" alt=""></a>
-  <a href="#baemax"><span class="n">02</span><h3>Sleep Apnoea Device</h3><span class="t">Embedded Systems, Electronics, Arduino</span><span class="y">2025</span><img src="assets/img/baemax-sketch.png" alt=""></a>
-  <a href="#gas-turbine"><span class="n">03</span><h3>Gas Turbine Emissions</h3><span class="t">Machine Learning, Data Analysis, Jupyter</span><span class="y">2026</span><img src="assets/img/gt-overfitting.png" alt=""></a>
-  <a href="#truss"><span class="n">04</span><h3>Truss Analysis</h3><span class="t">Direct Stiffness Method, ABAQUS</span><span class="y">2025</span><img src="assets/img/truss-u1.png" alt=""></a>
-  <a href="#materials"><span class="n">05</span><h3>Materials Selection</h3><span class="t">Materials Science, Engineering Decisions</span><span class="y">2025</span><img src="assets/img/materials-modulus-density.png" alt=""></a>
-  <a href="#makers-valley"><span class="n">06</span><h3>Makers Valley Housing</h3><span class="t">Materials Science, Sustainability</span><span class="y">2025</span><img src="assets/img/makers-modular.png" alt=""></a>
-  <a href="#pipe-friction"><span class="n">07</span><h3>Pipe Friction</h3><span class="t">Fluid Mechanics, Lab Testing</span><span class="y">2026</span><img src="assets/img/pipe-friction-moody.svg" alt=""></a>
-  <a href="#refrigeration"><span class="n">08</span><h3>Refrigeration Cycle</h3><span class="t">Thermodynamics, Lab Testing</span><span class="y">2026</span><img src="assets/img/refrigeration-ph-chart.jpg" alt=""></a>
-  <a href="#spirit-level"><span class="n">09</span><h3>Digital Spirit Level</h3><span class="t">Mechatronics, Arduino, Sensors</span><span class="y">2026</span><img src="assets/img/spirit-level-circuit.jpg" alt=""></a>
+  <a href="#pipe-friction"><span class="n">01</span><h3>Pipe Friction</h3><span class="t">Fluid Mechanics</span><span class="y">Jul 2026</span><img src="assets/img/pipe-friction-moody.svg" alt=""></a>
+  <a href="#compressor"><span class="n">02</span><h3>Piston Compressor</h3><span class="t">Mechanical Design</span><span class="y">Apr 2026</span><img src="assets/img/compressor-build-1.jpg" alt=""></a>
+  <a href="#spirit-level"><span class="n">03</span><h3>Digital Spirit Level</h3><span class="t">Mechatronics</span><span class="y">Apr 2026</span><img src="assets/img/spirit-level-circuit.jpg" alt=""></a>
+  <a href="#refrigeration"><span class="n">04</span><h3>Refrigeration Cycle</h3><span class="t">Thermodynamics</span><span class="y">Mar 2026</span><img src="assets/img/refrigeration-ph-chart.jpg" alt=""></a>
+  <a href="#gas-turbine"><span class="n">05</span><h3>Gas Turbine Emissions</h3><span class="t">Data Science &amp; Machine Learning</span><span class="y">Mar 2026</span><img src="assets/img/gt-overfitting.png" alt=""></a>
+  <a href="#materials"><span class="n">06</span><h3>Materials Selection</h3><span class="t">Materials Engineering</span><span class="y">Dec 2025</span><img src="assets/img/materials-modulus-density.png" alt=""></a>
+  <a href="#truss"><span class="n">07</span><h3>Truss Analysis</h3><span class="t">Structural Analysis</span><span class="y">Nov 2025</span><img src="assets/img/truss-u1.png" alt=""></a>
+  <a href="#baemax"><span class="n">08</span><h3>Sleep Apnoea Device</h3><span class="t">Electronics &amp; Embedded Systems</span><span class="y">May 2025</span><img src="assets/img/baemax-sketch.png" alt=""></a>
+  <a href="#makers-valley"><span class="n">09</span><h3>Makers Valley Housing</h3><span class="t">Sustainable Design</span><span class="y">Jan 2025</span><img src="assets/img/makers-modular.png" alt=""></a>
 </nav>
 
-<!-- 01 Compressor -->
+<!-- 01 Pipe friction -->
+<section class="case" id="pipe-friction">
+  <div class="l">
+    <div class="meta">01 / EG2101 Fluid Mechanics<br>Individual · Lab and Technical Report · July 2026</div>
+    <h2>Energy Losses due to Friction in a Pipe</h2>
+    <div class="nums">
+      <div><b>50 mm</b><span>pipe diameter</span></div>
+      <div><b>~17,200</b><span>Reynolds number (turbulent)</span></div>
+      <div><b>0.031</b><span>Darcy friction factor</span></div>
+      <div><b>~5.0 Pa</b><span>pressure loss over 50 cm</span></div>
+    </div>
+  </div>
+  <div class="r">
+    <h4>Overview</h4>
+    <p>Investigated how wall friction turns into pressure (energy) loss in a pipe, the loss a pump or fan has to overcome in any hydraulic pipe, gas pipeline or ventilation duct. In the lab, a suction pump drew air through a 50 mm pipe fitted with an orifice flow meter, with pressure tappings 500 mm apart along the test section. The measurements were repeated for a smooth pipe and a sand-roughened pipe, then generalised using dimensionless groups.</p>
+
+    <h4>My role</h4>
+    <p>Individual work. I carried out the in-person lab, then wrote an individual technical report setting out how the Reynolds number, flow rate and friction loss in a pipe can be found from pressure measurements, with a full worked calculation.</p>
+
+    <h4>Technical approach</h4>
+    <ul>
+      <li>Measured the pressure drop across the orifice plate to find the flow rate, following the method in DIN EN ISO 5167-2, then the mean velocity and Reynolds number</li>
+      <li>Measured the pressure drop along the 500 mm test length and rearranged the Darcy-Weisbach equation to find the friction factor</li>
+      <li>Compared the smooth-pipe friction factor with the Blasius equation, and plotted friction factor against Reynolds number on the Moody chart for both pipes, checking the rough pipe against the Colebrook-White equation and reading off its relative roughness</li>
+      <li>In the report, worked the full chain from an orifice pressure drop to mass flow rate, then used the Swamee-Jain equation for the friction factor and Darcy-Weisbach for the pressure loss over a 50 cm segment</li>
+    </ul>
+
+    <div class="panels">
+      <div class="panel">
+        <h5>Equations used</h5>
+        <ul>
+          <li>Orifice flow: Q = C<sub>d</sub> / √(1 − β⁴) · (πd²/4) · √(2Δp/ρ)</li>
+          <li>Reynolds number: Re = ρūD / μ, with ū = Q/A</li>
+          <li>Swamee-Jain: f = 0.25 / [log₁₀(ε/3.7D + 5.74/Re<sup>0.9</sup>)]²</li>
+          <li>Darcy-Weisbach: Δp = f (L/D) (ρū²/2)</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h5>Given values</h5>
+        <ul>
+          <li>Air: ρ = 1.2 kg/m³, μ = 1.81 × 10⁻⁵ Pa·s (20°C)</li>
+          <li>50 mm pipe, 31 mm orifice (β = 0.62), C<sub>d</sub> = 0.63</li>
+          <li>Orifice pressure drop ≈ 24 mmH₂O (≈ 235 Pa)</li>
+          <li>Relative roughness ε/D = 0.002, segment L = 0.5 m</li>
+        </ul>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Quantity</th><th>Result</th><th>What it means</th></tr>
+        <tr><td>Volume flow rate, Q</td><td class="v">≈ 0.0102 m³/s</td><td>From the orifice pressure drop</td></tr>
+        <tr><td>Mean velocity, ū</td><td class="v">≈ 5.2 m/s</td><td>Q divided by the pipe area</td></tr>
+        <tr><td>Reynolds number, Re</td><td class="v">≈ 17,200</td><td>Well above 2,300, so the flow is turbulent</td></tr>
+        <tr><td>Mass flow rate, ṁ</td><td class="v">≈ 0.0122 kg/s</td><td>ρQ</td></tr>
+        <tr><td>Friction factor, f</td><td class="v">≈ 0.031</td><td>About 12% above a smooth pipe (Blasius) at the same Re</td></tr>
+        <tr><td>Pressure loss over 0.5 m</td><td class="v">≈ 5.0 Pa</td><td>The energy the fan or pump must replace</td></tr>
+      </table>
+    </div>
+    <p class="note">Rounded values; the report carries each step to six decimal places</p>
+
+    <figure><img src="assets/img/pipe-friction-moody.svg" alt="Moody-style chart of friction factor against Reynolds number with the worked operating point marked"><figcaption>Friction factor against Reynolds number, plotted from the report's equations, with the worked case marked</figcaption></figure>
+
+    <div class="insight">
+      <h4>Key insight</h4>
+      <p>Once the flow is turbulent, the wall matters. At the same Reynolds number, a relative roughness of only 0.002 raised the friction factor by about 12% compared with a smooth pipe, and pressure loss scales directly with it. When sizing a pipe or duct, the assumed roughness is as important as the flow rate, so it should be checked rather than assumed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 Compressor -->
 <section class="case" id="compressor">
   <div class="l">
-    <div class="meta">01 / Engineering Design Module<br>Group Project · Sep 2025 – Apr 2026</div>
+    <div class="meta">02 / Engineering Design Module<br>Group Project · Sep 2025 – Apr 2026</div>
     <h2>Single-Stage Reciprocating Air Compressor</h2>
     <div class="nums">
       <div><b>3 bar</b><span>target pressure</span></div>
@@ -116,49 +185,104 @@
   </div>
 </section>
 
-<!-- 02 BAEMAX -->
-<section class="case" id="baemax">
+<!-- 03 Spirit level -->
+<section class="case" id="spirit-level">
   <div class="l">
-    <div class="meta">02 / Wearable Device Challenge<br>Group Project · May 2025</div>
-    <h2>BAEMAX Sleep Apnoea Device</h2>
+    <div class="meta">03 / EG2202 Mechatronics and Systems<br>Group Project · Mar – Apr 2026</div>
+    <h2>Arduino Digital Spirit Level</h2>
     <div class="nums">
-      <div><b>6 days</b><span>from brief to prototype</span></div>
-      <div><b>92%</b><span>SpO₂ apnoea threshold</span></div>
-      <div><b>25.7 hr</b><span>battery life</span></div>
-      <div><b>4.43/5</b><span>decision matrix score</span></div>
+      <div><b>3</b><span>feedback outputs</span></div>
+      <div><b>5° / 15°</b><span>LED thresholds</span></div>
+      <div><b>500–50 ms</b><span>beep interval range</span></div>
+      <div><b>0–180°</b><span>servo range</span></div>
     </div>
   </div>
   <div class="r">
     <h4>Overview</h4>
-    <p>Designed and built a wrist-worn sleep apnoea detection device capable of monitoring blood oxygen saturation (SpO₂) throughout the night, detecting apnoeic events, calculating the apnoea-hypopnoea index, and prototyping wireless transmission and a dashboard concept. The project ran as a hackathon-style challenge with a six-day delivery window.</p>
+    <p>Built a digital spirit level on an Arduino Uno that reads an accelerometer and gyroscope module over I²C, works out the tilt in two axes and reports it three ways: an RGB LED that changes colour, a buzzer that beeps faster as the tilt grows, and a servo that follows the tilt. A push button re-zeroes the level so it can measure relative to any surface.</p>
+    <figure><img src="assets/img/spirit-level-circuit.jpg" alt="Arduino spirit level circuit with accelerometer module, RGB LED, buzzer and zero button"><figcaption>Spirit level circuit: accelerometer module, RGB LED, buzzer and zero button</figcaption></figure>
 
     <h4>My role</h4>
-    <p>I led group communication and project direction, ensuring the team made structured design decisions rather than defaulting to the first idea. I coordinated the concept evaluation process, contributed to the algorithm design and component selection, and ensured delivery of a functioning prototype within the deadline.</p>
+    <p>Team of three. I wrote most of the code, built the circuits and wrote most of the report's written answers.</p>
 
     <h4>Technical approach</h4>
     <ul>
-      <li>Evaluated four competing concepts (RIP belt, nasal airflow sensor, pulse oximeter, microphone) using a weighted decision matrix across comfort, accuracy, reliability, cost, and ease of integration - pulse oximeter scored 4.43/5 and was selected</li>
-      <li>Hardware: MAX30102 pulse oximeter sensor, ESP32 microcontroller (chosen over Arduino Nano for built-in Wi-Fi and Bluetooth), 3.7V LiPo battery (1800mAh), OLED display, 3D printed enclosure</li>
-      <li>Algorithm: SpO₂ above 95% = normal; below 92% = apnoeic event flagged. System counts event cycles overnight and calculates apnoea-hypopnoea index (AHI)</li>
-      <li>Data pipeline: ESP32 prototyped to transmit via Wi-Fi; web dashboard designed to display SpO₂ graph, wake-up count, and AHI with severity scale</li>
-      <li>Battery life calculated at 1800mAh / 70mA average draw = 25.7 hours - sufficient for overnight monitoring</li>
-      <li>Finger-mounted sensor connected to wrist unit to improve reading accuracy while distributing component weight</li>
+      <li>Started the sensor over I²C, read six bytes of raw acceleration data, combined each pair of bytes into a 16-bit value and divided by 16,384 to convert to g</li>
+      <li>Calculated tilt from the direction of gravity: θ<sub>x</sub> = atan(A<sub>x</sub> / √(A<sub>y</sub>² + A<sub>z</sub>²)), and the same for θ<sub>y</sub>, converted to degrees</li>
+      <li>Drove the RGB LED from the larger of the two angles: green below 5°, yellow from 5° to 15°, red above 15°</li>
+      <li>Used Arduino's map() to shorten the pause between beeps from 500 ms at 5° to 50 ms at 90°, and mapped the X angle from −90°…90° onto the servo's 0°…180°</li>
+      <li>Added a zero button (internal pull-up, triggered on the press edge) that stores the current angles as a reference, so all later angles are measured relative to that position</li>
     </ul>
 
-    <figure><img src="assets/img/baemax-sketch.png" alt="Annotated BAEMAX concept design"><figcaption>Conceptual designs in report</figcaption></figure>
-    <figure><img src="assets/img/baemax-dashboard.png" alt="BAEMAX sleep data dashboard mock-up"><figcaption>Dashboard concept (mock-up, illustrative data)</figcaption></figure>
+    <div class="gallery" style="grid-template-columns: repeat(3, 1fr)">
+      <figure><img src="assets/img/spirit-level-green.jpg" alt="LED green when level"><figcaption>Green, under 5°</figcaption></figure>
+      <figure><img src="assets/img/spirit-level-yellow.jpg" alt="LED yellow at moderate tilt"><figcaption>Yellow, 5° to 15°</figcaption></figure>
+      <figure><img src="assets/img/spirit-level-red.jpg" alt="LED red at large tilt"><figcaption>Red, over 15°</figcaption></figure>
+    </div>
+    <figure><img src="assets/img/spirit-level-feedback.svg" alt="LED colour bands and buzzer interval plotted against tilt angle"><figcaption>How the LED and buzzer respond to tilt, taken from the code</figcaption></figure>
+    <figure><img src="assets/img/spirit-level-servo.jpg" alt="Final build with servo motor following the tilt"><figcaption>Final build with the servo following the X tilt</figcaption></figure>
+    <figure class="narrow"><img src="assets/img/spirit-level-serial.png" alt="Serial monitor output showing tilt angles and servo angle"><figcaption>Serial output: tilt angles and the matching servo angle</figcaption></figure>
 
     <div class="insight">
       <h4>Key insight</h4>
-      <p>Insisting on a structured decision matrix before building anything helped us build a solid foundation before proceeding with engineering decisions. The teams that built immediately had to redesign mid-week. The decision to use an ESP32 over Arduino Nano - made during that evaluation - was critical: its built-in Wi-Fi enabled wireless data transmission.</p>
+      <p>An accelerometer measures every acceleration, not only gravity. Held still, gravity dominates and the tilt reading is reliable; once the device moves, vibration and motion leak into the angle. A gyroscope measures how fast the angle is changing, which stays accurate over short periods of movement, so combining the two gives a level that is stable at rest and still tracks smoothly in motion.</p>
     </div>
   </div>
 </section>
 
-<!-- 03 Gas turbine -->
+<!-- 04 Refrigeration -->
+<section class="case" id="refrigeration">
+  <div class="l">
+    <div class="meta">04 / EG2201 Thermodynamics<br>Individual Assessment · March 2026</div>
+    <h2>Vapour-Compression Refrigeration Cycle</h2>
+    <div class="nums">
+      <div><b>99/100</b><span>assessment score</span></div>
+      <div><b>289 W</b><span>indicated compressor power</span></div>
+      <div><b>9 bar</b><span>condenser (absolute)</span></div>
+      <div><b>2.8 bar</b><span>evaporator (absolute)</span></div>
+    </div>
+  </div>
+  <div class="r">
+    <h4>Overview</h4>
+    <p>Analysed a vapour-compression refrigeration rig running on R134a, the same cycle used in fridges, air conditioning and chillers. Using readings taken from the rig during the lab session, I converted the measured pressures to absolute values, plotted the full cycle on a pressure-enthalpy (P-h) diagram and calculated the compressor's indicated power from dynamometer readings, in a timed 40-minute assessment.</p>
+
+    <h4>My role</h4>
+    <p>Individual assessment. The rig was operated by the teaching assistant; the readings, pressure conversions, P-h plot, calculations and written answers were all my own.</p>
+
+    <h4>Technical approach</h4>
+    <ul>
+      <li>Converted gauge readings to absolute pressure (p<sub>abs</sub> = p<sub>gauge</sub> + p<sub>atm</sub>): condenser 800 kPa to 9 bar, evaporator 180 kPa to 2.8 bar</li>
+      <li>Plotted the four states on the R134a P-h chart and labelled each process: compression (1 to 2), condensation (2 to 3), expansion through the valve (3 to 4) and evaporation (4 to 1)</li>
+      <li>Calculated the motor speed from the compressor speed and pulley ratio (777 rpm × 3.08 = 2,393 rpm), giving ω = 2πn/60 = 250.6 rad/s</li>
+      <li>Calculated indicated power as P<sub>IND</sub> = ω (F − F<sub>fric</sub>) L<sub>dyno</sub> = 250.6 × (12 − 5) × 0.165 = 289 W</li>
+      <li>Explained why gauge pressure must be converted first: the P-h chart is drawn in absolute pressure, so a gauge value leaves out atmospheric pressure and shifts every temperature and enthalpy read from the chart</li>
+    </ul>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th colspan="2">Refrigerant side</th><th colspan="2">Rig and water side</th></tr>
+        <tr><td>Compressor suction (1)</td><td class="v">0.4 °C</td><td>Evaporator power</td><td class="v">665 W</td></tr>
+        <tr><td>Compressor delivery (2)</td><td class="v">36.4 °C</td><td>Motor power</td><td class="v">483 W</td></tr>
+        <tr><td>Liquid leaving condenser (3)</td><td class="v">28.5 °C</td><td>Cooling water in / out</td><td class="v">17.2 / 28.5 °C</td></tr>
+        <tr><td>Evaporator inlet (4)</td><td class="v">1.3 °C</td><td>Cooling water flow</td><td class="v">20 g/s</td></tr>
+        <tr><td>R134a mass flow</td><td class="v">5.5 g/s</td><td>Spring balance / compressor speed</td><td class="v">12 N / 777 rpm</td></tr>
+      </table>
+    </div>
+
+    <figure><img src="assets/img/refrigeration-ph-chart.jpg" alt="Hand-annotated R134a pressure-enthalpy chart with the measured cycle plotted"><figcaption>My annotated R134a P-h chart from the assessment: evaporating at 2.8 bar, condensing at 9 bar, states 1 to 4 marked</figcaption></figure>
+    <figure><img src="assets/img/refrigeration-cycle.svg" alt="Refrigeration cycle diagram with measured temperatures and pressures"><figcaption>The measured cycle: compressor, condenser, expansion valve and evaporator</figcaption></figure>
+
+    <div class="insight">
+      <h4>Key insight</h4>
+      <p>The gauge-to-absolute conversion is the smallest step in the calculation, but everything after it depends on it. Read the chart at the gauge value and the evaporator sits a whole bar too low, so every saturation temperature and enthalpy that follows is wrong. Checking the inputs is part of the calculation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 Gas turbine -->
 <section class="case" id="gas-turbine">
   <div class="l">
-    <div class="meta">03 / Data Analysis Coursework<br>Group Project · March 2026</div>
+    <div class="meta">05 / Data Analysis Coursework<br>Group Project · March 2026</div>
     <h2>Gas Turbine Emissions Analysis</h2>
     <div class="nums">
       <div><b>35,499</b><span>observations</span></div>
@@ -202,52 +326,10 @@
   </div>
 </section>
 
-<!-- 04 Truss -->
-<section class="case" id="truss">
-  <div class="l">
-    <div class="meta">04 / EG2102 Structures and Materials<br>Individual · November 2025</div>
-    <h2>Finite Element and Analytical Evaluation of a Truss System</h2>
-    <div class="nums">
-      <div><b>100 kN</b><span>applied loads</span></div>
-      <div><b>11</b><span>truss elements</span></div>
-      <div><b>5</b><span>displacements compared</span></div>
-    </div>
-  </div>
-  <div class="r">
-    <h4>Overview</h4>
-    <p>Modelled a planar truss system under static loading in ABAQUS using finite element analysis, then independently validated the results using the Direct Stiffness Method analytically. Compared nodal displacements from both approaches, identified sources of divergence, and critically evaluated the limitations of each method.</p>
-
-    <h4>My role</h4>
-    <p>Performed complete analysis - modelling truss structure in ABAQUS, deriving the local and global stiffness matrices using the Direct Stiffness Method by hand, comparing the two sets of results, and critically evaluating the sources of divergence. Beyond the core analysis, I cross-validated the finite element model against an independent hand calculation and, when the two disagreed, treated the 42–70% discrepancy and the U4 sign reversal as a modelling issue to investigate, identifying an incomplete reduced system as the likely cause. The report, calculations and critical discussion were produced independently.</p>
-
-    <h4>Technical approach</h4>
-    <ul>
-      <li>ABAQUS model: 2D planar wire structure, two-node linear truss elements, Young's Modulus 200GPa, cross-section 500mm² (doubled to 1000mm² for Element 1 to reflect 2AE axial stiffness specification)</li>
-      <li>100kN loads applied at nodes 3, 4, and 5; roller boundary conditions at nodes 1 and 6</li>
-      <li>DSM: derived local stiffness matrices for all 11 elements, assembled global stiffness matrix, applied boundary conditions, and solved K·u = F to obtain nodal displacements</li>
-      <li>Results compared across five displacement components: U1, V2, V3, U4, V4</li>
-      <li>Initial percentage differences ranged from 41.8% (V3) to 69.8% (U1)</li>
-    </ul>
-
-    <figure><img src="assets/img/truss-u1.png" alt="ABAQUS U1 displacement plot"><figcaption>Deformation under load, Primary U1 (displacement in X)</figcaption></figure>
-    <figure><img src="assets/img/truss-u2.png" alt="ABAQUS U2 displacement plot"><figcaption>Deformation under load, Primary U2 (displacement in Y)</figcaption></figure>
-
-    <div class="insight">
-      <h4>Critical finding</h4>
-      <p>Cross-checking ABAQUS against a hand-derived Direct Stiffness Method exposed a 42–70% discrepancy and a sign reversal in U4. Because both methods rest on the same theory, I treated the gap as a modelling problem and reviewed my own working. My reduced system solved for only five displacements and omitted the load at node 5, which makes the hand model stiffer than ABAQUS and is the likely cause. The value of the exercise was the habit it reinforced: verify a result against an independent method, and investigate the disagreement.</p>
-    </div>
-
-    <h4>AI in structural analysis</h4>
-    <p>The report also reviewed how machine learning models - particularly neural networks - are being used to predict dynamic structural loads and optimise FEA mesh refinement, reducing computational time while improving accuracy for complex geometries. AI is currently a support tool in this domain, not a replacement for analytical methods.</p>
-
-    <figure class="narrow"><img src="assets/img/truss-dsm.jpg" alt="Handwritten Direct Stiffness Method working"><figcaption>Direct Stiffness Method working</figcaption></figure>
-  </div>
-</section>
-
-<!-- 05 Materials -->
+<!-- 06 Materials -->
 <section class="case" id="materials">
   <div class="l">
-    <div class="meta">05 / EG2102 Structures and Materials<br>Individual · December 2025</div>
+    <div class="meta">06 / EG2102 Structures and Materials<br>Individual · December 2025</div>
     <h2>Materials Selection for an Automotive Linkage Rod</h2>
     <div class="nums">
       <div><b>6</b><span>materials shortlisted</span></div>
@@ -304,10 +386,91 @@
   </div>
 </section>
 
-<!-- 06 Makers Valley -->
+<!-- 07 Truss -->
+<section class="case" id="truss">
+  <div class="l">
+    <div class="meta">07 / EG2102 Structures and Materials<br>Individual · November 2025</div>
+    <h2>Finite Element and Analytical Evaluation of a Truss System</h2>
+    <div class="nums">
+      <div><b>100 kN</b><span>applied loads</span></div>
+      <div><b>11</b><span>truss elements</span></div>
+      <div><b>5</b><span>displacements compared</span></div>
+    </div>
+  </div>
+  <div class="r">
+    <h4>Overview</h4>
+    <p>Modelled a planar truss system under static loading in ABAQUS using finite element analysis, then independently validated the results using the Direct Stiffness Method analytically. Compared nodal displacements from both approaches, identified sources of divergence, and critically evaluated the limitations of each method.</p>
+
+    <h4>My role</h4>
+    <p>Performed complete analysis - modelling truss structure in ABAQUS, deriving the local and global stiffness matrices using the Direct Stiffness Method by hand, comparing the two sets of results, and critically evaluating the sources of divergence. Beyond the core analysis, I cross-validated the finite element model against an independent hand calculation and, when the two disagreed, treated the 42–70% discrepancy and the U4 sign reversal as a modelling issue to investigate, identifying an incomplete reduced system as the likely cause. The report, calculations and critical discussion were produced independently.</p>
+
+    <h4>Technical approach</h4>
+    <ul>
+      <li>ABAQUS model: 2D planar wire structure, two-node linear truss elements, Young's Modulus 200GPa, cross-section 500mm² (doubled to 1000mm² for Element 1 to reflect 2AE axial stiffness specification)</li>
+      <li>100kN loads applied at nodes 3, 4, and 5; roller boundary conditions at nodes 1 and 6</li>
+      <li>DSM: derived local stiffness matrices for all 11 elements, assembled global stiffness matrix, applied boundary conditions, and solved K·u = F to obtain nodal displacements</li>
+      <li>Results compared across five displacement components: U1, V2, V3, U4, V4</li>
+      <li>Initial percentage differences ranged from 41.8% (V3) to 69.8% (U1)</li>
+    </ul>
+
+    <figure><img src="assets/img/truss-u1.png" alt="ABAQUS U1 displacement plot"><figcaption>Deformation under load, Primary U1 (displacement in X)</figcaption></figure>
+    <figure><img src="assets/img/truss-u2.png" alt="ABAQUS U2 displacement plot"><figcaption>Deformation under load, Primary U2 (displacement in Y)</figcaption></figure>
+
+    <div class="insight">
+      <h4>Critical finding</h4>
+      <p>Cross-checking ABAQUS against a hand-derived Direct Stiffness Method exposed a 42–70% discrepancy and a sign reversal in U4. Because both methods rest on the same theory, I treated the gap as a modelling problem and reviewed my own working. My reduced system solved for only five displacements and omitted the load at node 5, which makes the hand model stiffer than ABAQUS and is the likely cause. The value of the exercise was the habit it reinforced: verify a result against an independent method, and investigate the disagreement.</p>
+    </div>
+
+    <h4>AI in structural analysis</h4>
+    <p>The report also reviewed how machine learning models - particularly neural networks - are being used to predict dynamic structural loads and optimise FEA mesh refinement, reducing computational time while improving accuracy for complex geometries. AI is currently a support tool in this domain, not a replacement for analytical methods.</p>
+
+    <figure class="narrow"><img src="assets/img/truss-dsm.jpg" alt="Handwritten Direct Stiffness Method working"><figcaption>Direct Stiffness Method working</figcaption></figure>
+  </div>
+</section>
+
+<!-- 08 BAEMAX -->
+<section class="case" id="baemax">
+  <div class="l">
+    <div class="meta">08 / Wearable Device Challenge<br>Group Project · May 2025</div>
+    <h2>BAEMAX Sleep Apnoea Device</h2>
+    <div class="nums">
+      <div><b>6 days</b><span>from brief to prototype</span></div>
+      <div><b>92%</b><span>SpO₂ apnoea threshold</span></div>
+      <div><b>25.7 hr</b><span>battery life</span></div>
+      <div><b>4.43/5</b><span>decision matrix score</span></div>
+    </div>
+  </div>
+  <div class="r">
+    <h4>Overview</h4>
+    <p>Designed and built a wrist-worn sleep apnoea detection device capable of monitoring blood oxygen saturation (SpO₂) throughout the night, detecting apnoeic events, calculating the apnoea-hypopnoea index, and prototyping wireless transmission and a dashboard concept. The project ran as a hackathon-style challenge with a six-day delivery window.</p>
+
+    <h4>My role</h4>
+    <p>I led group communication and project direction, ensuring the team made structured design decisions rather than defaulting to the first idea. I coordinated the concept evaluation process, contributed to the algorithm design and component selection, and ensured delivery of a functioning prototype within the deadline.</p>
+
+    <h4>Technical approach</h4>
+    <ul>
+      <li>Evaluated four competing concepts (RIP belt, nasal airflow sensor, pulse oximeter, microphone) using a weighted decision matrix across comfort, accuracy, reliability, cost, and ease of integration - pulse oximeter scored 4.43/5 and was selected</li>
+      <li>Hardware: MAX30102 pulse oximeter sensor, ESP32 microcontroller (chosen over Arduino Nano for built-in Wi-Fi and Bluetooth), 3.7V LiPo battery (1800mAh), OLED display, 3D printed enclosure</li>
+      <li>Algorithm: SpO₂ above 95% = normal; below 92% = apnoeic event flagged. System counts event cycles overnight and calculates apnoea-hypopnoea index (AHI)</li>
+      <li>Data pipeline: ESP32 prototyped to transmit via Wi-Fi; web dashboard designed to display SpO₂ graph, wake-up count, and AHI with severity scale</li>
+      <li>Battery life calculated at 1800mAh / 70mA average draw = 25.7 hours - sufficient for overnight monitoring</li>
+      <li>Finger-mounted sensor connected to wrist unit to improve reading accuracy while distributing component weight</li>
+    </ul>
+
+    <figure><img src="assets/img/baemax-sketch.png" alt="Annotated BAEMAX concept design"><figcaption>Conceptual designs in report</figcaption></figure>
+    <figure><img src="assets/img/baemax-dashboard.png" alt="BAEMAX sleep data dashboard mock-up"><figcaption>Dashboard concept (mock-up, illustrative data)</figcaption></figure>
+
+    <div class="insight">
+      <h4>Key insight</h4>
+      <p>Insisting on a structured decision matrix before building anything helped us build a solid foundation before proceeding with engineering decisions. The teams that built immediately had to redesign mid-week. The decision to use an ESP32 over Arduino Nano - made during that evaluation - was critical: its built-in Wi-Fi enabled wireless data transmission.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 Makers Valley -->
 <section class="case" id="makers-valley">
   <div class="l">
-    <div class="meta">06 / EG1000 Engineering in Society<br>Group Project · Jan 2025</div>
+    <div class="meta">09 / EG1000 Engineering in Society<br>Group Project · Jan 2025</div>
     <h2>Makers Valley Housing Design - Engineers Without Borders UK</h2>
     <div class="nums">
       <div><b>3</b><span>phases</span></div>
@@ -343,169 +506,6 @@
     <div class="insight">
       <h4>Key insight</h4>
       <p>Our first proposal, modular housing, only helped people moving into new homes. It did nothing for residents already living in poorly insulated houses. Recognising that gap is why we added the retrofit programme, so the design served existing and new residents alike. The same thinking shaped the local labour model and the phased rollout, which was designed to avoid displacement. An engineering solution that displaces the community it is meant to help is not a solution, and designing for the people affected mattered as much as the technical specification.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 07 Pipe friction -->
-<section class="case" id="pipe-friction">
-  <div class="l">
-    <div class="meta">07 / EG2101 Fluid Mechanics<br>Individual · Lab and Technical Report · July 2026</div>
-    <h2>Energy Losses due to Friction in a Pipe</h2>
-    <div class="nums">
-      <div><b>50 mm</b><span>pipe diameter</span></div>
-      <div><b>~17,200</b><span>Reynolds number (turbulent)</span></div>
-      <div><b>0.031</b><span>Darcy friction factor</span></div>
-      <div><b>~5.0 Pa</b><span>pressure loss over 50 cm</span></div>
-    </div>
-  </div>
-  <div class="r">
-    <h4>Overview</h4>
-    <p>Investigated how wall friction turns into pressure (energy) loss in a pipe, the loss a pump or fan has to overcome in any hydraulic pipe, gas pipeline or ventilation duct. In the lab, a suction pump drew air through a 50 mm pipe fitted with an orifice flow meter, with pressure tappings 500 mm apart along the test section. The measurements were repeated for a smooth pipe and a sand-roughened pipe, then generalised using dimensionless groups.</p>
-
-    <h4>My role</h4>
-    <p>Individual work. I carried out the in-person lab, then wrote an individual technical report setting out how the Reynolds number, flow rate and friction loss in a pipe can be found from pressure measurements, with a full worked calculation.</p>
-
-    <h4>Technical approach</h4>
-    <ul>
-      <li>Measured the pressure drop across the orifice plate to find the flow rate, following the method in DIN EN ISO 5167-2, then the mean velocity and Reynolds number</li>
-      <li>Measured the pressure drop along the 500 mm test length and rearranged the Darcy-Weisbach equation to find the friction factor</li>
-      <li>Compared the smooth-pipe friction factor with the Blasius equation, and plotted friction factor against Reynolds number on the Moody chart for both pipes, checking the rough pipe against the Colebrook-White equation and reading off its relative roughness</li>
-      <li>In the report, worked the full chain from an orifice pressure drop to mass flow rate, then used the Swamee-Jain equation for the friction factor and Darcy-Weisbach for the pressure loss over a 50 cm segment</li>
-    </ul>
-
-    <div class="panels">
-      <div class="panel">
-        <h5>Equations used</h5>
-        <ul>
-          <li>Orifice flow: Q = C<sub>d</sub> / √(1 − β⁴) · (πd²/4) · √(2Δp/ρ)</li>
-          <li>Reynolds number: Re = ρūD / μ, with ū = Q/A</li>
-          <li>Swamee-Jain: f = 0.25 / [log₁₀(ε/3.7D + 5.74/Re<sup>0.9</sup>)]²</li>
-          <li>Darcy-Weisbach: Δp = f (L/D) (ρū²/2)</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h5>Given values</h5>
-        <ul>
-          <li>Air: ρ = 1.2 kg/m³, μ = 1.81 × 10⁻⁵ Pa·s (20°C)</li>
-          <li>50 mm pipe, 31 mm orifice (β = 0.62), C<sub>d</sub> = 0.63</li>
-          <li>Orifice pressure drop ≈ 24 mmH₂O (≈ 235 Pa)</li>
-          <li>Relative roughness ε/D = 0.002, segment L = 0.5 m</li>
-        </ul>
-      </div>
-    </div>
-    <div class="table-wrap">
-      <table>
-        <tr><th>Quantity</th><th>Result</th><th>What it means</th></tr>
-        <tr><td>Volume flow rate, Q</td><td class="v">≈ 0.0102 m³/s</td><td>From the orifice pressure drop</td></tr>
-        <tr><td>Mean velocity, ū</td><td class="v">≈ 5.2 m/s</td><td>Q divided by the pipe area</td></tr>
-        <tr><td>Reynolds number, Re</td><td class="v">≈ 17,200</td><td>Well above 2,300, so the flow is turbulent</td></tr>
-        <tr><td>Mass flow rate, ṁ</td><td class="v">≈ 0.0122 kg/s</td><td>ρQ</td></tr>
-        <tr><td>Friction factor, f</td><td class="v">≈ 0.031</td><td>About 12% above a smooth pipe (Blasius) at the same Re</td></tr>
-        <tr><td>Pressure loss over 0.5 m</td><td class="v">≈ 5.0 Pa</td><td>The energy the fan or pump must replace</td></tr>
-      </table>
-    </div>
-    <p class="note">Rounded values; the report carries each step to six decimal places</p>
-
-    <figure><img src="assets/img/pipe-friction-moody.svg" alt="Moody-style chart of friction factor against Reynolds number with the worked operating point marked"><figcaption>Friction factor against Reynolds number, plotted from the report's equations, with the worked case marked</figcaption></figure>
-
-    <div class="insight">
-      <h4>Key insight</h4>
-      <p>Once the flow is turbulent, the wall matters. At the same Reynolds number, a relative roughness of only 0.002 raised the friction factor by about 12% compared with a smooth pipe, and pressure loss scales directly with it. When sizing a pipe or duct, the assumed roughness is as important as the flow rate, so it should be checked rather than assumed.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 08 Refrigeration -->
-<section class="case" id="refrigeration">
-  <div class="l">
-    <div class="meta">08 / EG2201 Thermodynamics<br>Individual Assessment · March 2026</div>
-    <h2>Vapour-Compression Refrigeration Cycle</h2>
-    <div class="nums">
-      <div><b>99/100</b><span>assessment score</span></div>
-      <div><b>289 W</b><span>indicated compressor power</span></div>
-      <div><b>9 bar</b><span>condenser (absolute)</span></div>
-      <div><b>2.8 bar</b><span>evaporator (absolute)</span></div>
-    </div>
-  </div>
-  <div class="r">
-    <h4>Overview</h4>
-    <p>Analysed a vapour-compression refrigeration rig running on R134a, the same cycle used in fridges, air conditioning and chillers. Using readings taken from the rig during the lab session, I converted the measured pressures to absolute values, plotted the full cycle on a pressure-enthalpy (P-h) diagram and calculated the compressor's indicated power from dynamometer readings, in a timed 40-minute assessment.</p>
-
-    <h4>My role</h4>
-    <p>Individual assessment. The rig was operated by the teaching assistant; the readings, pressure conversions, P-h plot, calculations and written answers were all my own.</p>
-
-    <h4>Technical approach</h4>
-    <ul>
-      <li>Converted gauge readings to absolute pressure (p<sub>abs</sub> = p<sub>gauge</sub> + p<sub>atm</sub>): condenser 800 kPa to 9 bar, evaporator 180 kPa to 2.8 bar</li>
-      <li>Plotted the four states on the R134a P-h chart and labelled each process: compression (1 to 2), condensation (2 to 3), expansion through the valve (3 to 4) and evaporation (4 to 1)</li>
-      <li>Calculated the motor speed from the compressor speed and pulley ratio (777 rpm × 3.08 = 2,393 rpm), giving ω = 2πn/60 = 250.6 rad/s</li>
-      <li>Calculated indicated power as P<sub>IND</sub> = ω (F − F<sub>fric</sub>) L<sub>dyno</sub> = 250.6 × (12 − 5) × 0.165 = 289 W</li>
-      <li>Explained why gauge pressure must be converted first: the P-h chart is drawn in absolute pressure, so a gauge value leaves out atmospheric pressure and shifts every temperature and enthalpy read from the chart</li>
-    </ul>
-
-    <div class="table-wrap">
-      <table>
-        <tr><th colspan="2">Refrigerant side</th><th colspan="2">Rig and water side</th></tr>
-        <tr><td>Compressor suction (1)</td><td class="v">0.4 °C</td><td>Evaporator power</td><td class="v">665 W</td></tr>
-        <tr><td>Compressor delivery (2)</td><td class="v">36.4 °C</td><td>Motor power</td><td class="v">483 W</td></tr>
-        <tr><td>Liquid leaving condenser (3)</td><td class="v">28.5 °C</td><td>Cooling water in / out</td><td class="v">17.2 / 28.5 °C</td></tr>
-        <tr><td>Evaporator inlet (4)</td><td class="v">1.3 °C</td><td>Cooling water flow</td><td class="v">20 g/s</td></tr>
-        <tr><td>R134a mass flow</td><td class="v">5.5 g/s</td><td>Spring balance / compressor speed</td><td class="v">12 N / 777 rpm</td></tr>
-      </table>
-    </div>
-
-    <figure><img src="assets/img/refrigeration-ph-chart.jpg" alt="Hand-annotated R134a pressure-enthalpy chart with the measured cycle plotted"><figcaption>My annotated R134a P-h chart from the assessment: evaporating at 2.8 bar, condensing at 9 bar, states 1 to 4 marked</figcaption></figure>
-    <figure><img src="assets/img/refrigeration-cycle.svg" alt="Refrigeration cycle diagram with measured temperatures and pressures"><figcaption>The measured cycle: compressor, condenser, expansion valve and evaporator</figcaption></figure>
-
-    <div class="insight">
-      <h4>Key insight</h4>
-      <p>The gauge-to-absolute conversion is the smallest step in the calculation, but everything after it depends on it. Read the chart at the gauge value and the evaporator sits a whole bar too low, so every saturation temperature and enthalpy that follows is wrong. Checking the inputs is part of the calculation.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 09 Spirit level -->
-<section class="case" id="spirit-level">
-  <div class="l">
-    <div class="meta">09 / EG2202 Mechatronics and Systems<br>Group Project · Mar – Apr 2026</div>
-    <h2>Arduino Digital Spirit Level</h2>
-    <div class="nums">
-      <div><b>3</b><span>feedback outputs</span></div>
-      <div><b>5° / 15°</b><span>LED thresholds</span></div>
-      <div><b>500–50 ms</b><span>beep interval range</span></div>
-      <div><b>0–180°</b><span>servo range</span></div>
-    </div>
-  </div>
-  <div class="r">
-    <h4>Overview</h4>
-    <p>Built a digital spirit level on an Arduino Uno that reads an accelerometer and gyroscope module over I²C, works out the tilt in two axes and reports it three ways: an RGB LED that changes colour, a buzzer that beeps faster as the tilt grows, and a servo that follows the tilt. A push button re-zeroes the level so it can measure relative to any surface.</p>
-    <figure><img src="assets/img/spirit-level-circuit.jpg" alt="Arduino spirit level circuit with accelerometer module, RGB LED, buzzer and zero button"><figcaption>Spirit level circuit: accelerometer module, RGB LED, buzzer and zero button</figcaption></figure>
-
-    <h4>My role</h4>
-    <p>Team of three. I wrote most of the code, built the circuits and wrote most of the report's written answers.</p>
-
-    <h4>Technical approach</h4>
-    <ul>
-      <li>Started the sensor over I²C, read six bytes of raw acceleration data, combined each pair of bytes into a 16-bit value and divided by 16,384 to convert to g</li>
-      <li>Calculated tilt from the direction of gravity: θ<sub>x</sub> = atan(A<sub>x</sub> / √(A<sub>y</sub>² + A<sub>z</sub>²)), and the same for θ<sub>y</sub>, converted to degrees</li>
-      <li>Drove the RGB LED from the larger of the two angles: green below 5°, yellow from 5° to 15°, red above 15°</li>
-      <li>Used Arduino's map() to shorten the pause between beeps from 500 ms at 5° to 50 ms at 90°, and mapped the X angle from −90°…90° onto the servo's 0°…180°</li>
-      <li>Added a zero button (internal pull-up, triggered on the press edge) that stores the current angles as a reference, so all later angles are measured relative to that position</li>
-    </ul>
-
-    <div class="gallery" style="grid-template-columns: repeat(3, 1fr)">
-      <figure><img src="assets/img/spirit-level-green.jpg" alt="LED green when level"><figcaption>Green, under 5°</figcaption></figure>
-      <figure><img src="assets/img/spirit-level-yellow.jpg" alt="LED yellow at moderate tilt"><figcaption>Yellow, 5° to 15°</figcaption></figure>
-      <figure><img src="assets/img/spirit-level-red.jpg" alt="LED red at large tilt"><figcaption>Red, over 15°</figcaption></figure>
-    </div>
-    <figure><img src="assets/img/spirit-level-feedback.svg" alt="LED colour bands and buzzer interval plotted against tilt angle"><figcaption>How the LED and buzzer respond to tilt, taken from the code</figcaption></figure>
-    <figure><img src="assets/img/spirit-level-servo.jpg" alt="Final build with servo motor following the tilt"><figcaption>Final build with the servo following the X tilt</figcaption></figure>
-    <figure class="narrow"><img src="assets/img/spirit-level-serial.png" alt="Serial monitor output showing tilt angles and servo angle"><figcaption>Serial output: tilt angles and the matching servo angle</figcaption></figure>
-
-    <div class="insight">
-      <h4>Key insight</h4>
-      <p>An accelerometer measures every acceleration, not only gravity. Held still, gravity dominates and the tilt reading is reliable; once the device moves, vibration and motion leak into the angle. A gyroscope measures how fast the angle is changing, which stays accurate over short periods of movement, so combining the two gives a level that is stable at rest and still tracks smoothly in motion.</p>
     </div>
   </div>
 </section>
