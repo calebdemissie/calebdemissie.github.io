@@ -135,7 +135,7 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; }
 th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; color: var(--text); }
 th { font: 600 11px var(--mono); color: var(--acc); text-transform: uppercase; letter-spacing: 0.05em; background: var(--panel); }
 td.v { font-family: var(--mono); color: var(--ink); }
-.note { font: 11px var(--mono); color: var(--muted); margin-top: -18px; }
+.note, .r p.note { font: 11px var(--mono); color: var(--muted); margin-top: -18px; }
 .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0 24px; }
 .panel { border: 1px solid var(--line); background: var(--panel); padding: 16px 18px; }
 .panel h5 { font: 600 11px var(--mono); color: var(--acc); margin: 0 0 10px; text-transform: uppercase; }
